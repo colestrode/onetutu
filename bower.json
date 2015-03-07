@@ -1,0 +1,25 @@
+{
+  "name": "ng1to2",
+  "version": "0.0.0",
+  "description": "A skin for previewing Spotify playlists and tracks in Angular. We'll start from Angular 1.2 and keep upgrading until we have to stop!",
+  "keywords": [
+    "angular",
+    "angular1.2",
+    "angular1.3",
+    "angular1.4",
+    "angular2",
+    "spotify"
+  ],
+  "authors": [
+    "Cole Furfaro-Strode"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
