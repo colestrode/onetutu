@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html ng-app="oneTuTu">
+<html ng-app="onetutu">
 <head lang="en">
   <meta charset="UTF-8">
   <title>OneTutu Player</title>
 </head>
 <body>
 
-  <div class="player-controls"></div>
-  <nav class="left-gutter"></nav>
-  <main></main>
+  <div class="player-controls" ng-controller="ControlsController">
+    <ng-include src="'app/controls/controls.html'"></ng-include>
+  </div>
+  <nav class="library" ng-controller="LibraryController">
+    <ng-include src="'app/library/library.html'"></ng-include>
+  </nav>
+  <main>
+  </main>
 
-  <script src="app/app.js"></script>
+  <!-- bower:js -->
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
 
+  <script src="app.js"></script>
+  <script src="app/controls/controls.module.js"></script>
+  <script src="app/controls/controls.controller.js"></script>
+  <script src="app/library/library.module.js"></script>
+  <script src="app/library/library.controller.js"></script>
+  <script src="app/playlist/playlist.module.js"></script>
+  <script src="app/playlist/playlist.controller.js"></script>
 </body>
 </html>

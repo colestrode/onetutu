@@ -1,1 +1,4 @@
-angular.module('onetutu.playlist', ['ui-router']);
+/*
+ * Module for a single playlist view
+ */
+angular.module('onetutu.playlist', []);
