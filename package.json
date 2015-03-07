@@ -1,0 +1,22 @@
+{
+  "name": "onetutu",
+  "version": "0.0.0",
+  "description": "A little project to test the migration from Angular 1.2 to 2.x.",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.7"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colestrode/onetutu.git"
+  },
+  "author": "Cole Furfaro-Strode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colestrode/onetutu/issues"
+  },
+  "homepage": "https://github.com/colestrode/onetutu"
+}
