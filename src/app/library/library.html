@@ -1,3 +1,7 @@
-<ul>
-  <li ng-repeat="playlist in playlists">{{playlist.name}}</li>
-</ul>
+<div class="panel">
+  <div class="panel-body">
+    <ul class="nav nav-pills nav-stacked">
+      <li ng-repeat="playlist in playlists"><a href="#">{{playlist.name}}</a></li>
+    </ul>
+  </div>
+</div>

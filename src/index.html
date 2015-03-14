@@ -3,22 +3,29 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>OneTutu Player</title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href="assets/app.css"/>
+
 </head>
-<body>
+<body class="container">
 
   <div class="player-controls" ng-controller="ControlsController">
     <ng-include src="'app/controls/controls.html'"></ng-include>
   </div>
-  <nav class="library" ng-controller="LibraryController">
-    <ng-include src="'app/library/library.html'"></ng-include>
-  </nav>
-  <main>
-  </main>
+  <div class="row">
+    <nav class="library col-sm-3" ng-controller="LibraryController">
+      <ng-include src="'app/library/library.html'"></ng-include>
+    </nav>
+    <main class="col-sm-9">
+    </main>
+  </div>
 
   <!-- bower:js -->
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/angular/angular.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
   <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
   <!-- endbower -->
 
